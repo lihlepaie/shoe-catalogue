@@ -1,0 +1,29 @@
+body {
+    background-color: #656526;
+}
+
+h1 {
+    font-size: 60px;
+    font-style: italic;
+    text-align: center;
+    background-color: #444444;
+}
+
+.newShoe{
+  text-align: right;
+}
+
+img {
+    position: absolute;
+    transition-property: 50%;
+    left: 50%;
+    width: 350px;
+    height: 350px;
+    margin: -20px 0 0 -20px;
+    animation: spin 15s linear infinite;
+
+}
+table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
