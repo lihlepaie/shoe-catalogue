@@ -44,7 +44,7 @@ var size = document.querySelector('.size')
 var searchShoes = document.querySelector('.shoeStock')
 var li = document.querySelector('.li')
 var shoe = document.querySelector('.shoe')
-var option = document.querySelector('.option')
+
 
 var TemplateInstance = Handlebars.compile(myTemplate.innerHTML);
 
