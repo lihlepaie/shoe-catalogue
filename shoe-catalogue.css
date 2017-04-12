@@ -1,6 +1,8 @@
-body {
-    background-color: #656526;
+.container{
+  background-image: url("gucci.jpg");
+  height: 600px;
 }
+
 
 h1 {
     font-size: 60px;
@@ -22,8 +24,4 @@ img {
     margin: -20px 0 0 -20px;
     animation: spin 15s linear infinite;
 
-}
-table,th,td{
-  border: 1px solid black;
-  border-collapse: collapse;
 }

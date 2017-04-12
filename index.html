@@ -3,36 +3,28 @@
 
 <head>
     <meta charset="utf-8">
-    <title>shoe</title>
+    <title></title>
     <link rel="stylesheet" type="text/css" href="shoe-catalogue.css">
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src="handlebars-v4.0.5.js" charset"utf-8"></script>
 </head>
 
 <body>
+  <div class="container">
     <script class="myTemplate" type="text/Handlebars-x">
-
-        <table style ='width:50%'>
-         <caption>shoeStock Available</caption>
-    <tr>
-    <th>color</th>
-      <th>price</th>
-      <th>in_stock</th>
-      <th>size</th>
-      <th>brand</th>
-    </tr>
-    {{#each shoes}}
-<tr>
-<td>{{color}}</td>
-<td>{{price}}</td>
-<td>{{in_stock}}</td>
-<td>{{size}}</td>
-<td>{{brand}}</td>
-</tr>
-  {{/each}}
-    </script>
-
+<div id= "myShop"
+{{#each shoe}}
+<div id="">
+<div id="">
+<img src="{{image}}">
+<div>price: {{price}}</div>
+<div>color: {{color}}</div>
+<div>in_stock: {{in_stock}}</div>
+</div>
+</div>
+{{/each}}
+</script>
     <h1>Shoe-catalogue</h1>
-    <img src="http://pumaecom.scene7.com/is/image/PUMAECOM/362222_02_01_PNA?$PUM_PDP$">
+
         <input type="button" class="shoeStock" value="searchShoes">
     <br>
     <br>
@@ -63,18 +55,14 @@
     <br>
     <br>
     <br>
-    <div class="newShoe">
-    <input type="text" placeholder="add more new stock">
+
     <input type="button" value="add">
-    <br>
-    <br>
-    <input type="radio" name="addsize" value="sizes">SIZE
-    <input type="radio" name="addcolor" value="color">color
-    <input type="radio" name="addbrand" value="brand">brand
-    </div>
-    <div class="shoe">
+    <div class="display">
 
+</div>
     </div>
-    <script src="shoe-catalogue.js" charset="utf-8"></script>
 
+  <script src="shoe-catalogue.js" charset="utf-8"></script>
+</div>
+</body>
 </html>
