@@ -11,15 +11,17 @@
 <body>
   <div class="container">
     <script class="myTemplate" type="text/Handlebars-x">
-<div id= "myShop"
+
+    <div>
+
 {{#each shoe}}
-<div id="">
-<div id="">
+
 <img src="{{image}}">
 <div>price: {{price}}</div>
 <div>color: {{color}}</div>
 <div>in_stock: {{in_stock}}</div>
-</div>
+<div>size: {{size}}</div>
+<div>brand: {{brand}}</div>
 </div>
 {{/each}}
 </script>
@@ -57,7 +59,7 @@
     <br>
 
     <input type="button" value="add">
-    <div class="display">
+    <div class="myshoeSize">
 
 </div>
     </div>
