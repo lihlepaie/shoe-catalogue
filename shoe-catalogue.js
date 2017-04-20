@@ -48,33 +48,17 @@ var TemplateInstance = Handlebars.compile(myTemplate.innerHTML);
 
 var myshoe = [];
 
-// size.addEventListener('change', function(evt){
-//   var sizeSelected = evt.terget;
-//   //console.log(sizeSelected.value)
-//   for (var i = 0; i < myshoe.length; i++) {
-//     var color = myshoe[i]
-//     if (color(sizeSelected.value)) {
-//       shoesToDisplay.push(myshoe[i]);
-//     }else {
-//       (brand(sizeSelected.value))
-//       shoesToDisplay.push(myshoe[i]);
-//     }
-//   }
-//   var shoeHTML = TemplateInstance({
-//       shoes: myshoe
-//   })
+
 
 searchShoes.addEventListener('click', function() {
     for (var i = 0; i < shoes.length; i++) {
   if (sizeSelected.value == shoes[i].size || colors.value == shoes[i].color || brandSelected.value == shoes[i].brand ){
             myshoe.push(shoes[i]);
 
-        }
-    }
-
-localStorage
-    var shoeHTML = TemplateInstance({
-        shoes: myshoe
-    })
-    myshoeSize.innerHTML = shoeHTML
-});
+          }
+          else if (sizeSelected.value === 'All')
+          myshoe.push(shoes[i]);
+          var shoeHTML = TemplateInstance({shoes: myshoe})
+          myshoeSize.innerHTML = shoeHTML
+}
+})

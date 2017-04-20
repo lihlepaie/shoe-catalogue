@@ -1,5 +1,5 @@
 .container {
-    background-image: url("hill.jpg");
+    background-image: url("nyatawuli.jpg");
     height: 600px;
     background-color: #416566;
 }
@@ -16,11 +16,17 @@ h1 {
 }
 
 img {
-    position: absolute;
-    transition-property: 50%;
-    left: 50%;
-    width: 350px;
-    height: 350px;
-    margin: -20px 0 0 -20px;
-    animation: spin 15s linear infinite;
+    transition-property: 50px;
+    width: 150px;
+    height: 150px;
+}
+.left{
+  width:50%;
+  float: left;
+  display:inline-block;
+}
+.right{
+  float: left;
+  width: 50%;
+
 }
