@@ -1,14 +1,15 @@
 .container {
-    background-image: url("nyatawuli.jpg");
+    background-image: url("blue.jpeg");
     height: 600px;
-    background-color: #416566;
+    background-color: #416666;
+    height: 2000px;
 }
 
 h1 {
     font-size: 60px;
     font-style: italic;
     text-align: center;
-    background-color: #444;
+    background-color: #444999;
 }
 
 .newShoe {
@@ -17,16 +18,28 @@ h1 {
 
 img {
     transition-property: 50px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 .left{
   width:50%;
   float: left;
   display:inline-block;
+  color: white;
 }
 .right{
   float: left;
   width: 50%;
+  text-color:white;
+
+}
+table, th, td {
+    border: 1px solid black;
+}
+.more{
+  text-align: right;
+  font-size: 40px;
+  font-family: verdana;
+  margin-top: 0 100px;
 
 }

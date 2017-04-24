@@ -10,23 +10,23 @@
 
 <body>
     <div class="container">
-        <script class="myTemplate" type="text/Handlebars-x">
+        <script class="myTemplate" type="text/x-handlebars-template">
 
-            <div class = "dis">
+            <div class="dis">
 
                 {{#each shoes}}
 
                 <div class="left">
-                  <div>price: {{price}}</div>
-                  <div>color: {{color}}</div>
-                  <div>in_stock: {{in_stock}}</div>
-                  <div>size: {{size}}</div>
-                  <div>brand: {{brand}}</div>
+                    <div>price: {{price}}</div>
+                    <div>color: {{color}}</div>
+                    <div>in_stock: {{in_stock}}</div>
+                    <div>size: {{size}}</div>
+                    <div>brand: {{brand}}</div>
 
-                <div class="right">
-                  <img src="{{image}}" />
-                  </div>
-                  </div>
+                    <div class="right">
+                        <img src="{{image}}" />
+                    </div>
+                </div>
             </div>
             {{/each}}
         </script>
@@ -35,41 +35,62 @@
         <input type="button" class="shoeStock" value="searchShoes">
         <br>
         <br>
-        <div class="sizeSelected">
-        <select class="size" Brand="Adidas">
-  <option value="shoe size" selected>select size</option>
-  <option value="All" class="size">All</option>
-  <option value="4" class="size">4</option>
-  <option value="5" class="size">5</option>
-  <option value="6" class="size">6</option>
-  <option value="7" class="size">7</option>
-</div>
-</select>
-        <select class="color" size="1">
-<option value="shoe color" selected>select color</option>
-<option value="Grey" class="color">Grey</option>
-<option value="Blue" class="color">Blue</option>
-<option value="White" class="color">White</option>
-<option value="Black" class="color">Black</option>
-</select>
+        <select class="selectSize" name="select">
 
-        <select class="brand" color="blue">
-<option value="shoe Brand" selected>select Brand</option>
-<option value="Adidas" class="brand">Adidas</option>
-<option value="Nike"class="brand">Nike</option>
-<option value="Supegar" class="brand">Supegar</option>
-<option value="Puma" class="brand">Puma</option>
-</select>
-        <br>
-        <br>
-        <br>
+          <script class="myTemplate1" type="text/x-handlebars-template">
+                 <option selected disabled="disabled">select size</option>
+                    <option value="All">All</option>
+                   {{#each shoes}}
+                   <option value="{{size}}">{{size}}></option>
+                   {{/each}}
+
+               </script>
+             </select >
+
+
+             <select class="selectColor" name="select">
+               <script class="myTemplate2" type="text/x-handlebars-template">
+
+                      <option selected disabled="disabled">select color</option>
+                        {{#each shoes}}
+                        <option value="{{color}}">{{color}}</option>
+                        {{/each}}
+
+                    </script>
+                  </select >
+
+
+                  <select class="selectBrand" name="select">
+                    <script class="myTemplate3" type="text/x-handlebars-template">
+
+                           <option selected disabled="disabled">select brand</option>
+                             {{#each shoes}}
+                             <option value="{{brand}}">{{brand}}</option>
+                             {{/each}}
+
+                         </script>
+                       </select >
+
 
         <div class="myshoeSize">
           </div>
 </div>
-        <input type="button" value="add">
+<div class="more">
+        <input type="button" value="add more stock"><br>
+        <input type="text" name="size" placeholder="add size"><br>
+        <input type="text" name="color" placeholder="add color"><br>
+        <input type="text" name="stock" placeholder="add in_stock"><br>
+        <input type="text" name="price" placeholder="add price"><br>
+</div>
 
 
+    </div>
+    <div class="dropdown">
+      <div class="size">
+<div class="color">
+  <div class="brand">
+  </div>
+      </div>
 
     </div>
 
