@@ -24,7 +24,7 @@ var shoes = [{
         color: 'Grey',
         price: 750,
         in_stock: 22,
-        size: 3.5,
+        size: 5,
         brand: 'Adidas',
         image: 'Adidas.jpg'
     },
@@ -48,7 +48,7 @@ var shoes = [{
         color: 'Pink',
         price: 100,
         in_stock: 3,
-        size: 5,
+        size: 8,
         brand: 'Pringle',
         image: 'pringle.jpg'
     },
