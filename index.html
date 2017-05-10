@@ -38,6 +38,7 @@
         <select class="selectSize" name="select">
 
           <script class="myTemplate1" type="text/x-handlebars-template">
+
                  <option selected disabled="disabled">select size</option>
                     <option value="All">All</option>
                    {{#each shoes}}
@@ -76,18 +77,19 @@
         </div>
 
       <div class="more">
-            <input type="button" value="add more stock"><br>
-            <input type="text" name="size" placeholder="add size"><br>
-            <input type="text" name="color" placeholder="add color"><br>
-            <input type="text" name="stock" placeholder="add in_stock"><br>
-            <input type="text" name="price" placeholder="add price"><br>
+      <div class="addbttn">
+            <input type="file" class="bttn" name="bttn" placceholder="image">
+            <input type="button" class='addBtn' value="add new stock"><br>
+            <input type="text" id= "size"  name="size"  placeholder="add size"><br>
+            <input type="text" id= "color" name="color" placeholder="add color"><br>
+            <input type="text" id= "in_stock" name="in_stock" placeholder="add stock"><br>
+            <input type="text" id= "price" name="price" placeholder="add price"><br>
+            <input type="text" id= "brand" name="brand" placeholder="add brand"><br>
+
        </div>
+     </div>
 
-
-
-      </div>
-
-  <div class="dropdown">
+        <div class="dropdown">
     <div class="size">
       <div class="color">
         <div class="brand"></div>
@@ -95,8 +97,8 @@
 
     </div>
 
-    <script src="shoe-catalogue.js" charset="utf-8"></script>
-  </div>
-</body>
-
+      <div class="color">
+        <div class="brand"></div>
+      </div>
+<script src="shoe-catalogue.js" charset="utf-8"></script>
 </html>
